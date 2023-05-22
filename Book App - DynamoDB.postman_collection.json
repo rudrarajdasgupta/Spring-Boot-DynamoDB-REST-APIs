@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "7704fb3b-2f03-4042-85b6-cea1e63d1a55",
+		"name": "Book App - DynamoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8081/book",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/book/85d9397d-8ae9-4a75-8259-e195aad63b10",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/book/8bfa7ffc-362a-4778-83c0-bd4f5653c5be",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"book",
+						"8bfa7ffc-362a-4778-83c0-bd4f5653c5be"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/book/ef1a1d8b-f209-42ee-aaca-c50d3d589142",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/book/ef1a1d8b-f209-42ee-aaca-c50d3d589142",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"book",
+						"ef1a1d8b-f209-42ee-aaca-c50d3d589142"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/book/85d9397d-8ae9-4a75-8259-e195aad63b10",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"85d9397d-8ae9-4a75-8259-e195aad63b10\",\n    \"title\": \"title1\",\n    \"description\": \"description1\",\n    \"author\": \"author1\",\n    \"publisher\": \"publisher1\",\n    \"year\": \"year1\",\n    \"isbn\": \"isbn\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/book/85d9397d-8ae9-4a75-8259-e195aad63b10",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"book",
+						"85d9397d-8ae9-4a75-8259-e195aad63b10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8081/book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"title1\",\n    \"description\": \"description1\",\n    \"author\": \"author1\",\n    \"publisher\": \"publisher1\",\n    \"year\": \"year1\",\n    \"isbn\": \"ISBN\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8081/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
